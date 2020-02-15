@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    android:padding="@dimen/layout_padding">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_question"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/layout_padding">
+
+
+            <ImageView
+                android:id="@+id/img_congrats"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:contentDescription="@string/img_logo"
+                app:layout_constraintBottom_toTopOf="@id/btn_start"
+                app:layout_constraintDimensionRatio="4:3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.1"
+                tools:src="@drawable/nullcorrectanswers" />
+
+            <TextView
+                android:id="@+id/resaul_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_good_luck"
+                android:gravity="center"
+                android:textColor="@color/darkBlue"
+                android:textSize="@dimen/txt_big"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@id/resaul_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_congrats"
+                tools:text="correct answers: 6" />
+
+            <TextView
+                android:id="@+id/resaul_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_good_luck"
+                android:gravity="center"
+                android:textColor="@color/darkBlue"
+                android:textSize="@dimen/txt_big"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@id/btn_restart"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/resaul_1"
+                tools:text="correct answers: 6" />
+
+            <Button
+                android:id="@+id/btn_restart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_good_luck"
+                android:background="@color/colorAccent"
+                android:text="@string/try_again"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_mid"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="5:2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/resaul_2"
+                app:layout_constraintVertical_bias="1" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

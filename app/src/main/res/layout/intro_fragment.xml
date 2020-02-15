@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    android:padding="@dimen/layout_padding">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_intro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/layout_padding">
+
+            <TextView
+                android:id="@+id/txt_rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/rule_margin_bot"
+                android:gravity="center"
+                android:text="@string/rules"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/txt_big"
+                app:layout_constraintBottom_toTopOf="@id/rule_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <TextView
+                android:id="@+id/rule_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/rule_margin_bot"
+                android:text="@string/rule1"
+                android:textColor="@color/darkBlue"
+                android:textSize="@dimen/txt_mid"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@id/rule_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_rules" />
+
+            <TextView
+                android:id="@+id/rule_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/rule_margin_bot"
+                android:text="@string/rule2"
+                android:textColor="@color/darkBlue"
+                android:textSize="@dimen/txt_mid"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@id/rule_3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rule_1" />
+
+            <TextView
+                android:id="@+id/rule_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rule3"
+                android:textColor="@color/darkBlue"
+                android:textSize="@dimen/txt_mid"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@id/good_luck"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rule_2" />
+
+            <TextView
+                android:id="@+id/good_luck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_good_luck"
+                android:layout_marginBottom="@dimen/margin_good_luck"
+                android:gravity="center"
+                android:text="@string/good_luck"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/txt_big"
+                app:layout_constraintBottom_toTopOf="@id/btn_start"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rule_3" />
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="@string/start"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_mid"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="5:2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

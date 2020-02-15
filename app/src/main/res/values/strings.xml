@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Quizz App</string>
+    <string name="time">time</string>
+    <string name="questions">questions</string>
+    <string name="submit">submit</string>
+    <string name="start">start</string>
+    <string name="try_again">try again</string>
+    <string name="btn_description_next">next</string>
+    <string name="btn_description_previous">previous</string>
+    <string name="img_logo">logo for the question</string>
+    <string name="rules">rules</string>
+    <string name="rule1">1. There is 6 questions to be answered</string>
+    <string name="rule2">2. you have 30 seconds to answer all the questions</string>
+    <string name="rule3">3. you can\'t submit your answers until half the time passed</string>
+    <string name="good_luck">good luck</string>
+    <string name="hint">enter your answer</string>
+    <string name="correct_answers">correct answers: </string>
+    <string name="all_answers_correct">Awesome all answers are correct keep up the good work.</string>
+    <string name="some_answers_correct">Once you stop learning, you start dying\n\'Albert Einstein\'.</string>
+    <string name="null_answers_correct">LOL Congratulation finding this easter egg!!.</string>
+
+</resources>
